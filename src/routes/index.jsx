@@ -1,10 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "../App.jsx";
+import Job from "../views/Jobs.jsx";
+import JobDetail from "../views/JobDetail.jsx";
 
 const routes = createBrowserRouter([
     {
-        path: '/api',
-        element: <App />
+        path: '/',
+        element: <Job />
+    },
+    {
+        path: '/job/:id',
+        element: <JobDetail />
     },
 ])
 export default routes
